@@ -1,0 +1,33 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col">
+      <div class="col col-5 mx-auto mt-4 mb-4 text-center">
+        <h2>Calculadora</h2>
+      </div>
+      <div class="col col-5 mx-auto mt-4 mb-4">
+        <input class="form-control" type="number" placeholder="Ingresar primer número" [(ngModel)]="numero1">
+      </div>
+      <div class="col col-5 mx-auto mt-4 mb-4">
+        <input class="form-control" type="number" placeholder="Ingresar segundo número" [(ngModel)]="numero2">
+      </div>
+      <div class="col-5 mx-auto mt-4 mb-4 text-center">
+        <select class="form-select" aria-label="Default select example" [(ngModel)]="operacion">
+          <option selected>Seleccionar operación</option>
+          <option value="1">Sumar</option>
+          <option value="2">Restar</option>
+          <option value="3">Multiplicar</option>
+          <option value="4">Dividir</option>
+        </select>
+      </div>
+      <div class="col-5 mx-auto mt-4 mb-4 text-center">
+        <div [ngSwitch]="operacion">
+          <p *ngSwitchCase="'Seleccionar operación'" [ngStyle]="{'color': 'red'}">Resultado: {{ resultado0 }}</p>
+          <p *ngSwitchCase="1" [ngStyle]="{'color': 'blue'}">Resultado: {{ numero1 + numero2 }}</p>
+          <p *ngSwitchCase="2" [ngStyle]="{'color': 'grey'}">Resultado: {{ numero1 - numero2 }}</p>
+          <p *ngSwitchCase="3" [ngStyle]="{'color': 'orange'}">Resultado: {{ numero1 * numero2 }}</p>
+          <p *ngSwitchCase="4" [ngStyle]="{'color': 'green'}">Resultado: {{ numero1 / numero2 }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

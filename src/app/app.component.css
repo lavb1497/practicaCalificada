@@ -1,0 +1,8 @@
+#navbar {
+  background-color: #aed4ee;
+  display: flex;
+  justify-content: center;
+}
+#body {
+  margin-bottom: 25px;
+}

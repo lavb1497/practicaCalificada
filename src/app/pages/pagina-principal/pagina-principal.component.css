@@ -1,0 +1,19 @@
+#img1 {
+  height: 300px;
+  width: 455px;
+}
+#img2 {
+  height: 300px;
+  width: 455px;
+}
+#img3 {
+  height: 300px;
+  width: 455px;
+}
+#sidebar {
+  background-color: #aed4ee;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  height: 400px;
+}

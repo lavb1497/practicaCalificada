@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="row">
+    <div class="col col-sm-4" id="sidebar">
+      <h2>Luis Villafana</h2> <br>
+      <p><strong>Profesión:</strong> Desarrollador Web Front End</p>
+      <p><strong>Edad:</strong> 25 años</p>
+      <p><strong>Celular:</strong> +999 999 999</p>
+      <p><strong>Correo:</strong> luis12345@gmail.com</p>
+      <p><strong>Facebook:</strong> @luis12345</p>
+    </div>
+    <div class="col col-sm-8">
+      <div class="card mt-4 mb-4">
+        <img src="../../../assets/img/blog-2.jpg" class="card-img-top mx-auto mt-2" alt="imgSobreMi" id="img1">
+        <div class="card-body">
+          <h5 class="card-title">Sobre Mi</h5>
+          <p class="card-text">Hola , mi nombre es Luis Villafana. Soy Bachiller de Ing de Minas, pero mi pasión por la programación me llevó a tener una segunda carrera, que es el Desarrollo Web. Llevo ya medio año aprendiendo no solo por medio de una Beca que conseguí del Estado, sino también por medios propios, aprendiendo de Youtube, Platzi y de algunos compañeros. Hoy por hoy, he logrado aprender algunas tecnologías como son HTML, CSS, JAVASCRIPT, BOOTSTRAP, ANGULAR y MONOGODB. </p>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <img src="../../../assets/img/blog-1.jpg" class="card-img-top mx-auto mt-2" alt="imgProyectos" id="img2">
+        <div class="card-body">
+          <h5 class="card-title">Mi Experiencia</h5>
+          <p class="card-text">Respecto a mi experiencia he desarrollado algunos proyectos importantes para la industria como un Dashboard, un Ecommerce y también un Punto de Venta.</p>
+          <a href="#" class="btn btn-primary">Ver Proyectos</a>
+        </div>
+      </div>
+      <div class="card mb-4 text-center">
+        <img src="../../../assets/img/blog-4.jpg" class="card-img-top mx-auto mt-2" alt="imgContactame" id="img3">
+        <div class="card-body">
+          <h5 class="card-title">Contáctame</h5>
+          <p class="card-text">Dale en el check para abrir el formulario</p>
+          <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched" [(ngModel)]="button" (ngModelChange)="cambioButton()">
+          <label>Abrir formulario</label>
+        </div>
+      </div>
+      <div *ngIf="mostrarFormulario">
+        <h2 class="text-center">Deja tus datos aquí</h2>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Ingresa tu email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com"><br>
+          <label for="exampleFormControlInput1" class="form-label">Ingresa tu celular</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="999 999 999">
+          <div class="mb-3"><br>
+            <label for="exampleFormControlTextarea1" class="form-label">Ingresa un mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="col-auto text-center">
+            <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
